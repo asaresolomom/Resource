@@ -9,37 +9,33 @@
         <div class="display">
             <input type="text" id="result" disabled>
         </div>
-        <div class="keys">
-            <button onclick="clearScreen()" class="operator">C</button>
-            <button onclick="backspace()" class="operator">CE</button>
-            <button onclick="display('%')" class="operator">%</button>
-            <button onclick="display('/')" class="operator">/</button>
+        <div class="buttons">
+            <button onclick="clearScreen()">C</button>
+            <button onclick="backspace()">&larr;</button>
+            <button onclick="display('sin(')">sin</button>
+            <button onclick="display('cos(')">cos</button>
+            <button onclick="display('tan(')">tan</button>
+            <button onclick="display('log(')">log</button>
+            <button onclick="display('^')">^</button>
+            <button onclick="display('sqrt(')">√</button>
+            <button onclick="display('(')">(</button>
+            <button onclick="display(')')">)</button>
             <button onclick="display('7')">7</button>
             <button onclick="display('8')">8</button>
             <button onclick="display('9')">9</button>
-            <button onclick="display('*')" class="operator">*</button>
+            <button onclick="display('/')">/</button>
             <button onclick="display('4')">4</button>
             <button onclick="display('5')">5</button>
             <button onclick="display('6')">6</button>
-            <button onclick="display('-')" class="operator">-</button>
+            <button onclick="display('*')">*</button>
             <button onclick="display('1')">1</button>
             <button onclick="display('2')">2</button>
             <button onclick="display('3')">3</button>
-            <button onclick="display('+')" class="operator">+</button>
+            <button onclick="display('-')">-</button>
             <button onclick="display('0')">0</button>
             <button onclick="display('.')">.</button>
-            <button onclick="calculate()" class="operator">=</button>
-            <button onclick="sin()">sin</button>
-            <button onclick="cos()">cos</button>
-            <button onclick="tan()">tan</button>
-            <button onclick="log()">log</button>
-            <button onclick="sqrt()">√</button>
-            <button onclick="exp()">exp</button>
-            <button onclick="pow()">x^y</button>
-            <button onclick="pi()">π</button>
-            <button onclick="memoryStore()">MS</button>
-            <button onclick="memoryRecall()">MR</button>
-            <button onclick="memoryClear()">MC</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="display('+')">+</button>
         </div>
     </div>
     <script src="script.js"></script>

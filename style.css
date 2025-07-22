@@ -26,26 +26,24 @@ body {
     background-color: #222;
     color: #fff;
     font-size: 2em;
-    text-align: right;
 }
 
-.keys {
+.buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.keys button {
+button {
     border: 1px solid #ccc;
     padding: 20px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     cursor: pointer;
 }
 
-.keys button:active {
+button:hover {
     background-color: #ddd;
 }
 
-.operator {
-    background-color: #f0ad4e;
-    color: #fff;
+button:active {
+    background-color: #ccc;
 }
