@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scientific Calculator</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="calculator">
@@ -11,31 +13,34 @@
         </div>
         <div class="buttons">
             <button onclick="clearScreen()">C</button>
-            <button onclick="backspace()">&larr;</button>
-            <button onclick="display('sin(')">sin</button>
-            <button onclick="display('cos(')">cos</button>
-            <button onclick="display('tan(')">tan</button>
-            <button onclick="display('log(')">log</button>
-            <button onclick="display('^')">^</button>
-            <button onclick="display('sqrt(')">√</button>
-            <button onclick="display('(')">(</button>
-            <button onclick="display(')')">)</button>
-            <button onclick="display('7')">7</button>
-            <button onclick="display('8')">8</button>
-            <button onclick="display('9')">9</button>
-            <button onclick="display('/')">/</button>
-            <button onclick="display('4')">4</button>
-            <button onclick="display('5')">5</button>
-            <button onclick="display('6')">6</button>
-            <button onclick="display('*')">*</button>
-            <button onclick="display('1')">1</button>
-            <button onclick="display('2')">2</button>
-            <button onclick="display('3')">3</button>
-            <button onclick="display('-')">-</button>
-            <button onclick="display('0')">0</button>
-            <button onclick="display('.')">.</button>
+            <button onclick="backspace()"><<</button>
+            <button onclick="insert('**')">^</button>
+            <button onclick="insert('/')">/</button>
+            <button onclick="insert('7')">7</button>
+            <button onclick="insert('8')">8</button>
+            <button onclick="insert('9')">9</button>
+            <button onclick="insert('*')">*</button>
+            <button onclick="insert('4')">4</button>
+            <button onclick="insert('5')">5</button>
+            <button onclick="insert('6')">6</button>
+            <button onclick="insert('-')">-</button>
+            <button onclick="insert('1')">1</button>
+            <button onclick="insert('2')">2</button>
+            <button onclick="insert('3')">3</button>
+            <button onclick="insert('+')">+</button>
+            <button onclick="insert('0')">0</button>
+            <button onclick="insert('.')">.</button>
             <button onclick="calculate()">=</button>
-            <button onclick="display('+')">+</button>
+            <button onclick="insert('(')">(</button>
+            <button onclick="insert(')')">)</button>
+            <button onclick="insert('Math.sin(')">sin</button>
+            <button onclick="insert('Math.cos(')">cos</button>
+            <button onclick="insert('Math.tan(')">tan</button>
+            <button onclick="insert('Math.log10(')">log</button>
+            <button onclick="insert('Math.log(')">ln</button>
+            <button onclick="insert('Math.sqrt(')">√</button>
+            <button onclick="insert('Math.PI')">π</button>
+            <button onclick="insert('Math.E')">e</button>
         </div>
     </div>
     <script src="script.js"></script>

@@ -1,5 +1,5 @@
-function display(val) {
-    document.getElementById('result').value += val;
+function insert(value) {
+    document.getElementById('result').value += value;
 }
 
 function clearScreen() {
@@ -7,18 +7,15 @@ function clearScreen() {
 }
 
 function backspace() {
-    var value = document.getElementById('result').value;
-    document.getElementById('result').value = value.substr(0, value.length - 1);
+    let result = document.getElementById('result').value;
+    document.getElementById('result').value = result.slice(0, -1);
 }
 
 function calculate() {
-    var p = document.getElementById('result').value;
-    p = p.replace(/sin/g, 'Math.sin');
-    p = p.replace(/cos/g, 'Math.cos');
-    p = p.replace(/tan/g, 'Math.tan');
-    p = p.replace(/log/g, 'Math.log');
-    p = p.replace(/\^/g, '**');
-    p = p.replace(/sqrt/g, 'Math.sqrt');
-    var q = eval(p);
-    document.getElementById('result').value = q;
+    let result = document.getElementById('result').value;
+    try {
+        document.getElementById('result').value = eval(result);
+    } catch (error) {
+        document.getElementById('result').value = 'Error';
+    }
 }
