@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin - Transactions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Admin - Transactions</h2>
+    <p>View transactions and activate bundles.</p>
+
+    <div style="margin-bottom:1rem;">
+      <button id="refreshBtn">Refresh</button>
+      <a href="/" style="margin-left:1rem;">Open Store</a>
+    </div>
+
+    <table id="txTable" style="width:100%; border-collapse:collapse;">
+      <thead>
+        <tr>
+          <th>Reference</th>
+          <th>Bundle</th>
+          <th>Amount (GH₵)</th>
+          <th>Phone</th>
+          <th>Method</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

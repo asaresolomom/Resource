@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asare Solomon - MTN Data Bundles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Asare Solomon 📱</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bundles">Bundles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>MTN Up2U Data Bundles</h1>
+            <p>Get instant MTN data access from Asare Solomon at the best prices</p>
+            <button class="cta-button" onclick="document.getElementById('bundles').scrollIntoView({behavior: 'smooth'})">
+                Shop Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Bundles Section -->
+    <section id="bundles" class="bundles-section">
+        <div class="container">
+            <h2>MTN Up2U Packages</h2>
+            <div class="bundles-grid">
+                <!-- Bundle Cards will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us</p>
+            <div class="contact-info">
+                <p>📧 Email: <a href="mailto:solomonbillion433@gmail.com">solomonbillion433@gmail.com</a></p>
+                <p>📱 Phone: +233 541 737 072</p>
+                <p><i class="fab fa-whatsapp" style="color: #25d366; margin-right: 0.5rem;"></i>WhatsApp: <a href="https://wa.me/233541737072" target="_blank">+233 541 737 072</a></p>
+                <p>Sold by: <strong>Asare Solomon</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transaction Modal -->
+    <div id="transactionModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Complete Your Purchase</h2>
+            <form id="transactionForm">
+                <div class="form-group">
+                    <label for="bundleName"><strong>Selected Bundle:</strong></label>
+                    <input type="text" id="bundleName" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="bundlePrice"><strong>Price:</strong></label>
+                    <input type="text" id="bundlePrice" readonly>
+                </div>
+                <hr style="margin: 1.5rem 0; border: none; border-top: 1px solid #e5e7eb;">
+                <div class="form-group">
+                    <label for="phoneNumber"><strong>Phone Number to Receive Bundle:</strong></label>
+                    <input type="tel" id="phoneNumber" placeholder="Enter your MTN phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="paymentMethod"><strong>Payment Method:</strong></label>
+                    <select id="paymentMethod" required>
+                        <option value="">-- Select Payment Method --</option>
+                        <option value="paystack">Paystack (Secure Online)</option>
+                        <option value="mtn-momo">MTN Mobile Money</option>
+                    </select>
+                </div>
+                <button type="button" class="pay-button" onclick="initiatePayment()">
+                    Pay Securely
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Asare Solomon - MTN Data Bundles. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/233541737072?text=Hello%20Asare%20Solomon%2C%20I%27m%20interested%20in%20your%20MTN%20data%20bundles" target="_blank" class="whatsapp-btn" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Paystack Script -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
